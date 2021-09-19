@@ -1,2 +1,2 @@
 # CoffeShop
-Responsive CoffeeShope Site With JS
+Responsive CoffeeShope Site With Vanilla JS
