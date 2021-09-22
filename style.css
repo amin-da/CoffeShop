@@ -1,8 +1,9 @@
+/* Fonts */
 @font-face {
   font-family: "Shabnam";
   src: url("./fonts/Shabnam.woff") format("woff");
 }
-
+/* Varibale */
 :root {
   --main-color: #d3ad7f;
   --balck: #13131a;
@@ -10,6 +11,7 @@
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
+/* basic style */
 * {
   font-family: "Shabnam", sans-serif;
   margin: 0;
@@ -43,4 +45,39 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: var(--bg);
+}
+
+/* header style */
+.header {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 6rem;
+}
+
+.header .navbar a {
+  margin: 0 10px;
+  color: #fff;
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+  border: 0.1rem solid var(--main-color);
+  border-radius: 5px;
+  padding: 0.4rem;
+  transition: 0.2s ease-in;
 }
