@@ -47,6 +47,10 @@ body {
   background: var(--bg);
 }
 
+section {
+  padding: 2rem 7%;
+}
+
 .btn {
   margin-top: 1rem;
   cursor: pointer;
@@ -114,7 +118,7 @@ body {
 .header .search-form {
   position: absolute;
   top: 115%;
-  right: 5%;
+  right: 25%;
   width: 50rem;
   height: 5rem;
   display: flex;
@@ -123,6 +127,9 @@ body {
   transform: scaleY(0);
   /* نمایش آن از مبدا بالا باشد */
   transform-origin: top;
+}
+.header .search-form.active {
+  transform: scaleY(1);
 }
 
 .header .search-form input {
@@ -158,6 +165,11 @@ body {
   width: 28rem;
   background: #fff;
   padding: 0 1.5rem;
+  transition: all 0.5s ease;
+}
+.header .cart-items-container.active {
+  right: 0;
+  transition: all 0.5s ease;
 }
 
 .header .cart-items-container .cart-item {
@@ -202,4 +214,87 @@ body {
   text-align: center;
 }
 
+/* Home Style */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/home-img.png) no-repeat;
+  background-size: cover;
+  direction: rtl;
+  /* background-position: center; */
+}
+
+.home .content {
+  max-width: 35rem;
+}
+.home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  padding: 1rem 0;
+  color: rgb(201, 197, 197);
+}
+
 /* *********************************** media-queris************************* */
+@media (max-width: 991px) {
+  html {
+    font-size: 65%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9rem);
+    transition: all 0.5s ease;
+  }
+  /* برای باز و بسته شدن منو است */
+  .header .navbar.active {
+    right: 0;
+    transition: all 0.5s ease;
+  }
+
+  .header .navbar a {
+    color: var(--balck);
+    display: block;
+    direction: rtl;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .header .navbar a:hover {
+    color: var(--balck);
+  }
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
+}
