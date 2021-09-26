@@ -228,6 +228,7 @@ section {
 
 .home .content {
   max-width: 35rem;
+  height: 50vh;
 }
 .home .content h3 {
   font-size: 6rem;
@@ -240,7 +241,7 @@ section {
   font-weight: lighter;
   line-height: 1.5;
   padding: 1rem 0;
-  color: rgb(201, 197, 197);
+  color: rgb(156, 156, 156);
 }
 
 /* *********************************** media-queris************************* */
@@ -290,6 +291,24 @@ section {
   .header .search-form {
     width: 90%;
     right: 2rem;
+  }
+
+  .home {
+    background-position: right;
+    justify-content: center;
+    text-align: right;
+    background-position: center;
+    width: 100vh;
+  }
+  .home .content{
+    margin-right: 4rem;
+  }
+  .home .content h3 {
+    
+    font-size: 4.3rem;
+  }
+  .home .content p {
+    font-size: 1.3rem;
   }
 }
 
