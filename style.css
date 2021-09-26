@@ -29,6 +29,7 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+  direction: rtl !important;
 }
 
 html::-webkit-scrollbar {
@@ -50,7 +51,16 @@ body {
 section {
   padding: 2rem 7%;
 }
-
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+  font-size: 4.5rem;
+}
+.heading span {
+  color: var(--main-color);
+}
 .btn {
   margin-top: 1rem;
   cursor: pointer;
@@ -244,6 +254,40 @@ section {
   color: rgb(156, 156, 156);
 }
 
+/*About Style */
+.about .row {
+  /* height: 50%; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background: var(--balck);
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+.about .row .image img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding: 10px;
+}
+
+.about .row .content p {
+  font-size: 1.4rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
 /* *********************************** media-queris************************* */
 @media (max-width: 991px) {
   html {
@@ -300,11 +344,10 @@ section {
     background-position: center;
     width: 100vh;
   }
-  .home .content{
+  .home .content {
     margin-right: 4rem;
   }
   .home .content h3 {
-    
     font-size: 4.3rem;
   }
   .home .content p {
