@@ -396,6 +396,45 @@ section {
   font-size: 1.5rem;
 }
 
+/* review style */
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.review .box-container .box p {
+  direction: ltr;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: rgb(150, 148, 148);
+  padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .box-container .box h3 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.review .box-container .box .stars i {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
 /* *********************************** media-queris************************* */
 @media (max-width: 991px) {
   html {
