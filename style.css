@@ -29,7 +29,8 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
-  direction: rtl !important;
+  scroll-behavior: smooth;
+  /* direction: rtl !important; */
 }
 
 html::-webkit-scrollbar {
@@ -255,6 +256,7 @@ section {
 }
 
 /*About Style */
+
 .about .row {
   /* height: 50%; */
   display: flex;
@@ -272,6 +274,7 @@ section {
   width: 100%;
 }
 .about .row .content {
+  direction: rtl !important;
   flex: 1 1 45rem;
   padding: 2rem;
 }
@@ -291,6 +294,7 @@ section {
 /* Menu style */
 
 .menu .box-container {
+  direction: rtl !important;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
@@ -336,6 +340,7 @@ section {
 /* products style */
 
 .products .box-container {
+  direction: rtl !important;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
@@ -430,7 +435,9 @@ section {
   font-size: 1.5rem;
   color: #fff;
 }
-
+.review .box-container .box .stars {
+  direction: rtl !important;
+}
 .review .box-container .box .stars i {
   font-size: 1.5rem;
   color: var(--main-color);
@@ -439,31 +446,32 @@ section {
 /* contact style */
 
 .contact .row {
+  direction: rtl !important;
+
   display: flex;
   /* align-items: center; */
   background: var(--balck);
   flex-wrap: wrap;
   gap: 1rem;
 }
-.contact .row .map{
+.contact .row .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
-
 }
-.contact .row form{
+.contact .row form {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
 }
 
-.contact .row h3{
+.contact .row h3 {
   text-transform: uppercase;
   font-size: 3rem;
   color: #fff;
 }
 
-.contact .row form .inputBox{
+.contact .row form .inputBox {
   display: flex;
   align-items: center;
   margin: 2rem 0;
@@ -471,23 +479,78 @@ section {
   border: var(--border);
 }
 
-.contact .row form .inputBox span{
+.contact .row form .inputBox span {
   color: #fff;
   font-size: 1.5rem;
   padding: 0.5rem;
-} 
+}
 
-.contact .row form .inputBox input{
-
+.contact .row form .inputBox input {
   width: 100%;
   font-size: 1.5rem;
   color: #fff;
   padding: 1rem;
   text-transform: none;
   background: none;
+}
 
+/* blogs style */
 
+.blogs .box-container {
+  direction: rtl !important;
 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  border: var(--border);
+}
+
+.blogs .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+}
+/* خیلی حرکت قشنگیه اینجور هاور شدن */
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+  padding: 1.5rem;
+}
+
+.blogs .box-container .box .content .title {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+  color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+  color: var(--main-color);
+  display: block;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(187, 185, 185);
+  padding: 1rem 0;
 }
 
 /* *********************************** media-queris************************* */
