@@ -435,6 +435,61 @@ section {
   font-size: 1.5rem;
   color: var(--main-color);
 }
+
+/* contact style */
+
+.contact .row {
+  display: flex;
+  /* align-items: center; */
+  background: var(--balck);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contact .row .map{
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+
+}
+.contact .row form{
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row h3{
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.contact .row form .inputBox{
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  background: var(--balck);
+  border: var(--border);
+}
+
+.contact .row form .inputBox span{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+} 
+
+.contact .row form .inputBox input{
+
+  width: 100%;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem;
+  text-transform: none;
+  background: none;
+
+
+
+}
+
 /* *********************************** media-queris************************* */
 @media (max-width: 991px) {
   html {
