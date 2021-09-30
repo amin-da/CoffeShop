@@ -556,6 +556,7 @@ section {
 /* footer style */
 
 .footer {
+  margin-top: 2rem;
   background: var(--balck);
   text-align: center;
   direction: rtl;
