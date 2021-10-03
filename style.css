@@ -234,20 +234,22 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./images/home-img.png) no-repeat;
+  background: url(./images/ban1.jpg) no-repeat;
   background-size: cover;
   direction: rtl;
+  
   /* background-position: center; */
 }
 
 .home .content {
-  max-width: 35rem;
-  height: 50vh;
+  max-width: 40rem;
+  height: 60vh;
 }
 .home .content h3 {
-  font-size: 6rem;
+  font-size: 4.8rem;
   text-transform: uppercase;
-  color: #fff;
+  color: rgba(255, 255, 255,1);
+  
 }
 
 .home .content p {
@@ -255,7 +257,7 @@ section {
   font-weight: lighter;
   line-height: 1.5;
   padding: 1rem 0;
-  color: rgb(156, 156, 156);
+  color: #fff;
 }
 
 /*About Style */
@@ -275,6 +277,8 @@ section {
 }
 .about .row .image img {
   width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
 }
 .about .row .content {
   direction: rtl !important;
@@ -374,7 +378,7 @@ section {
 }
 
 .products .box-container .box .image img {
-  height: 20rem;
+  height: 25rem;
 }
 
 .products .box-container .box .content h3 {
