@@ -692,10 +692,10 @@ section {
     justify-content: center;
     text-align: right;
     background-position: center;
-    width: 100vh;
+    width: 100vw;
   }
   .home .content {
-    margin-right: 20%;
+    margin-left: 10%;
   }
   .home .content h3 {
     font-size: 4rem;
@@ -711,6 +711,6 @@ section {
   }
 
   .header {
-    padding: 1rem 0;
+    padding: 1rem 2rem 1rem 0;
   }
 }
