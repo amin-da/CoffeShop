@@ -29,7 +29,6 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
-  scroll-behavior: smooth;
   /* direction: rtl !important; */
 }
 
@@ -82,7 +81,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2%;
+  padding: 1rem 1rem 0 0;
   border-bottom: var(--border);
   position: fixed;
   top: 0;
@@ -351,7 +350,9 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
+  cursor: pointer;
 }
+
 
 .products .box-container .box {
   text-align: center;
@@ -379,6 +380,9 @@ section {
 
 .products .box-container .box .image img {
   height: 25rem;
+}
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
 }
 
 .products .box-container .box .content h3 {
@@ -420,7 +424,9 @@ section {
   border: var(--border);
   text-align: center;
   padding: 2rem 2rem;
+  cursor: pointer;
 }
+
 
 .review .box-container .box p {
   direction: ltr;
@@ -429,6 +435,13 @@ section {
   color: rgb(150, 148, 148);
   padding: 2rem 0;
 }
+
+.review .box-container .box:hover p {
+  padding:2rem 0.5rem;
+  transform: scale(1.15);
+  color: rgb(197, 195, 195);
+
+  }
 
 .review .box-container .box .user {
   height: 8rem;
@@ -666,9 +679,11 @@ section {
     width: 90%;
     right: 2rem;
   }
+  
   .header .logo img {
     margin-top: 1rem;
     height: 70%;
+    width: 60%;
   }
 
   .home {
@@ -679,10 +694,10 @@ section {
     width: 100vh;
   }
   .home .content {
-    margin-right: 15%;
+    margin-right: 20%;
   }
   .home .content h3 {
-    font-size: 4.3rem;
+    font-size: 4rem;
   }
   .home .content p {
     font-size: 1.3rem;
