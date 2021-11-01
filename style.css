@@ -132,7 +132,7 @@ section {
 .header .search-form {
   position: absolute;
   top: 115%;
-  right: 25%;
+  right: 26%;
   width: 50rem;
   height: 5rem;
   display: flex;
@@ -237,7 +237,7 @@ section {
   background: url(./images/ban1.jpg) no-repeat;
   background-size: cover;
   direction: rtl;
-  
+
   /* background-position: center; */
 }
 
@@ -248,8 +248,7 @@ section {
 .home .content h3 {
   font-size: 4.8rem;
   text-transform: uppercase;
-  color: rgba(255, 255, 255,1);
-  
+  color: rgba(255, 255, 255, 1);
 }
 
 .home .content p {
@@ -354,7 +353,6 @@ section {
   cursor: pointer;
 }
 
-
 .products .box-container .box {
   text-align: center;
   border: var(--border);
@@ -428,7 +426,6 @@ section {
   cursor: pointer;
 }
 
-
 .review .box-container .box p {
   direction: ltr;
   font-size: 1.4rem;
@@ -437,12 +434,9 @@ section {
   padding: 2rem 0;
 }
 
-.review .box-container .box:hover p {
-  padding:2rem 0.5rem;
-  transform: scale(1.15);
-  color: rgb(197, 195, 195);
-
-  }
+.review .box-container .box:hover {
+  border:0.1rem solid #d3ad7f;
+}
 
 .review .box-container .box .user {
   height: 8rem;
@@ -633,6 +627,15 @@ section {
 }
 
 /* *********************************** media-queris************************* */
+
+@media (max-width: 1025px) {
+  html {
+    font-size: 78%;
+  }
+  .header .search-form {
+    right: 40%;
+  }
+}
 @media (max-width: 991px) {
   html {
     font-size: 65%;
@@ -640,6 +643,7 @@ section {
   .header {
     padding: 1.5rem 2rem;
   }
+
   section {
     padding: 2rem;
   }
@@ -680,7 +684,7 @@ section {
     width: 90%;
     right: 2rem;
   }
-  
+
   .header .logo img {
     margin-top: 1rem;
     height: 70%;
